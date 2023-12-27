@@ -77,6 +77,11 @@ header h1 {
     outline: none;
 }
 
+.inputs-left select {
+    appearance: none;
+    background: 307px center url(../img/arrow.png) no-repeat;
+}
+
 .registration-button input,
 .login-button input {
     margin: 0;
@@ -99,7 +104,10 @@ header h1 {
 }
 
 .inputs-right {
+    /* position: fixed; */
     min-width: 310px;
+    top: 25.8%;
+    right: 19.3%;
 }
 
 .inputs-right ul {
@@ -154,12 +162,16 @@ header h1 {
 
 .inputs-right ul li:nth-child(5) input {
     width: unset;
-    margin: 4px 4px 14px 4px;
+    margin: 4px 4px 14px 0px;
 }
 
 .inputs-right li:nth-child(5) label {
     font: 400 13px "Roboto";
     color: #1f222c;
+}
+
+.elements hr {
+    border: 1px solid #dcdcde;
 }
 
 .elements h2 {
@@ -250,4 +262,8 @@ header h1 {
 
 .wrapper .top-ul li:not(:last-child) label {
     margin-right: 25px;
+}
+
+input[type=checkbox] {
+    
 }

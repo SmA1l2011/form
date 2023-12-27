@@ -24,14 +24,14 @@
                     <ul>
                         <li><label for="name"><input type="text" placeholder="Введіть ім’я" maxlength="30" name="name"
                                     id="name"></label></li>
-                        <li><label for="email"><input type="text" placeholder="Email" name="email" maxlength="50"
+                        <li><label for="email"><input type="email" placeholder="Email" name="email" maxlength="50"
                                     id="email"></label></li>
                         <li>
                             <select name="city" id="city">
-                                <option value="">Ваше місто</option>
-                                <option value="">Київ</option>
-                                <option value="">Львів</option>
-                                <option value="">Хмельницький</option>
+                                <option value="your-city" selected disabled>Ваше місто</option>
+                                <option value="kiev">Київ</option>
+                                <option value="lviv">Львів</option>
+                                <option value="Khmelnytskyi">Хмельницький</option>
                             </select>
                         </li>
                         <li>
@@ -52,7 +52,7 @@
                             <label for="login">Логін</label>
                         </li>
                         <li>
-                            <input type="text" name="password" id="password">
+                            <input type="password" name="password" id="password">
                             <label for="password">Пароль</label>
                         </li>
                         <li><a href="#">Забули пароль?</a></li>
