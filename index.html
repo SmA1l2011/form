@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
     <meta charset="UTF-8">
@@ -21,50 +21,54 @@
             <div class="inputs">
                 <div class="inputs-left">
                     <h2>01. проста форма</h2>
-                    <ul>
-                        <li><label for="name"><input type="text" placeholder="Введіть ім’я" maxlength="30" name="name"
-                                    id="name"></label></li>
-                        <li><label for="email"><input type="email" placeholder="Email" name="email" maxlength="50"
-                                    id="email"></label></li>
-                        <li>
-                            <select name="city" id="city">
-                                <option value="your-city" selected disabled>Ваше місто</option>
-                                <option value="kiev">Київ</option>
-                                <option value="lviv">Львів</option>
-                                <option value="Khmelnytskyi">Хмельницький</option>
-                            </select>
-                        </li>
-                        <li>
-                            <label for="email-down"><textarea name="email-down" id="email-down" cols="30" rows="5"
-                                    placeholder="Email" maxlength="500"></textarea></label></li>
-                        <li class="registration-button">
-                            <label for="registration-button"><input type="submit" value="Зареєструватися"
-                                    name="registration-button" id="registration-button"></label>
-                        </li>
-                    </ul>
+                    <form action="#">
+                        <ul>
+                            <li><label for="name"><input type="text" placeholder="Введіть ім’я" maxlength="30"
+                                        name="name" id="name"></label></li>
+                            <li><label for="email"><input type="email" placeholder="Email" name="email" maxlength="50"
+                                        id="email"></label></li>
+                            <li>
+                                <select name="city" id="city">
+                                    <option value="your-city" selected disabled>Ваше місто</option>
+                                    <option value="kiev">Київ</option>
+                                    <option value="lviv">Львів</option>
+                                    <option value="Khmelnytskyi">Хмельницький</option>
+                                </select>
+                            </li>
+                            <li>
+                                <label for="email-down"><textarea name="email-down" id="email-down" cols="30" rows="5"
+                                        placeholder="Email" maxlength="500"></textarea></label></li>
+                            <li class="registration-button">
+                                <label for="registration-button"><input type="submit" value="Зареєструватися"
+                                        name="registration-button" id="registration-button"></label>
+                            </li>
+                        </ul>
+                    </form>
                 </div>
                 <div class="inputs-right">
                     <h2>06. фіксована форма</h2>
-                    <ul>
-                        <li><a href="#"><img src="img/cross.png" alt="#"></a></li>
-                        <li>
-                            <input type="text" name="login" id="login">
-                            <label for="login">Логін</label>
-                        </li>
-                        <li>
-                            <input type="password" name="password" id="password">
-                            <label for="password">Пароль</label>
-                        </li>
-                        <li><a href="#">Забули пароль?</a></li>
-                        <li>
-                            <input type="checkbox" name="remember-password" id="remember-password">
-                            <label for="remember-password">Запам’ятати пароль</label>
-                        </li>
-                        <li class="login-button">
-                            <label for="login-button"><input type="submit" value="Увійти" name="login-button"
-                                    id="login-button"></label>
-                        </li>
-                    </ul>
+                    <form action="#">
+                        <ul>
+                            <li><a href="#"><img src="img/cross.png" alt="#"></a></li>
+                            <li>
+                                <input type="text" name="login" id="login">
+                                <label for="login">Логін</label>
+                            </li>
+                            <li>
+                                <input type="password" name="password" id="password">
+                                <label for="password">Пароль</label>
+                            </li>
+                            <li><a href="#">Забули пароль?</a></li>
+                            <li>
+                                <input type="checkbox" name="remember-password" id="remember-password">
+                                <label for="remember-password">Запам’ятати пароль</label>
+                            </li>
+                            <li class="login-button">
+                                <label for="login-button"><input type="submit" value="Увійти" name="login-button"
+                                        id="login-button"></label>
+                            </li>
+                        </ul>
+                    </form>
                 </div>
             </div>
         </header>
@@ -74,63 +78,224 @@
                 <h2>02. елементи</h2>
                 <div class="elements-flex">
                     <div class="left-elements">
-                        <ul>
-                            <li>
-                                <input type="radio" name="new-post" id="new-post">
-                                <label for="new-post">Нова Пошта</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="courier" id="courier">
-                                <label for="courier">Кур’єр</label>
-                            </li>
-                            <li>
-                                <input type="radio" name="pickup" id="pickup">
-                                <label for="pickup">Самовивіз</label>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <input type="checkbox" name="consent" id="consent">
-                                <label for="consent">Прочитав умови договору</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="consonant" id="consonant">
-                                <label for="consonant">Згідний з ПДВ 9%</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="rhyme-news" id="rhyme-news">
-                                <label for="rhyme-news">Отримувати новини на ел. пошту</label>
-                            </li>
-                        </ul>
+                        <form action="#">
+                            <ul>
+                                <li>
+                                    <input type="radio" name="left-radio" id="new-post">
+                                    <label for="new-post">Нова Пошта</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="left-radio" id="courier">
+                                    <label for="courier">Кур’єр</label>
+                                </li>
+                                <li>
+                                    <input type="radio" name="left-radio" id="pickup">
+                                    <label for="pickup">Самовивіз</label>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="consent" id="consent">
+                                    <label for="consent">Прочитав умови договору</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="consonant" id="consonant">
+                                    <label for="consonant">Згідний з ПДВ 9%</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="rhyme-news" id="rhyme-news">
+                                    <label for="rhyme-news">Отримувати новини на ел. пошту</label>
+                                </li>
+                            </ul>
+                        </form>
                     </div>
                     <div class="right-elements">
-                        <ul class="top-ul">
-                            <li>Статус</li>
-                            <li>
-                                <input type="checkbox" name="novelty" id="novelty">
-                                <label for="novelty">Новинки</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="promotional-goods" id="promotional-goods">
-                                <label for="promotional-goods">Акційні товари</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" name="sale" id="sale">
-                                <label for="sale">Розпродаж</label>
-                            </li>
-                        </ul>
-                        <ul class="down-ul">
-                            <li>Дата</li>
-                            <li>
-                                <input type="date">
-                            </li>
-                        </ul>
+                        <form action="#">
+                            <ul class="top-ul">
+                                <li>Статус</li>
+                                <li>
+                                    <input type="checkbox" name="novelty" id="novelty">
+                                    <label for="novelty">Новинки</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="promotional-goods" id="promotional-goods">
+                                    <label for="promotional-goods">Акційні товари</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="sale" id="sale">
+                                    <label for="sale">Розпродаж</label>
+                                </li>
+                            </ul>
+                            <ul class="down-ul">
+                                <li>Дата</li>
+                                <li>
+                                    <input type="date">
+                                </li>
+                            </ul>
+                        </form>
                     </div>
                 </div>
             </div>
+            <div class="style-checkbox">
+                <hr>
+                <h2>03. стилізовані чекбокси </h2>
+                <div class="style-flex">
+                    <div class="checkbox-left">
+                        <form action="#">
+                            <ul>
+                                <li class="men-radio">
+                                    <input type="radio" name="men-radio" id="men-radio">
+                                    <label for="men-radio">Чоловік</label>
+                                </li>
+                                <li class="women-radio">
+                                    <input type="radio" name="men-radio" id="women-radio">
+                                    <label for="women-radio">Жінка</label>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                    <div class="checkbox-right">
+                        <form action="#">
+                            <ul>
+                                <li>
+                                    <input type="checkbox" name="receive-news" id="receive-news">
+                                    <label for="receive-news">Отримувати новини</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="buy-sausages" id="buy-sausages">
+                                    <label for="buy-sausages">Купити додому ковбаси</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="turn-light" id="turn-light">
+                                    <label for="turn-light">Включити світло</label>
+                                </li>
+                            </ul>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="table-form">
+                <hr>
+                <h2>04. форма таблицею</h2>
+                <h3>Заповніть усі необхідні поля</h3>
+                <form action="#">
+                    <table>
+                        <tr>
+                            <td><label for="name-main">ФІО:</label></td>
+                            <td colspan="2">
+                                <input type="text" name="name-main" id="name-main" placeholder="Введіть ім’я">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="password-main">Пароль:</label></td>
+                            <td colspan="2">
+                                <input type="password" name="password-main" id="password-main" minlength="6"
+                                    placeholder="Введіть не менше 6 символів">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="city-main">Місто:</label></td>
+                            <td colspan="2">
+                                <select name="city-main" id="city-main">
+                                    <option value="your-city" selected disabled>Ваше місто</option>
+                                    <option value="kiev">Київ</option>
+                                    <option value="lviv">Львів</option>
+                                    <option value="Khmelnytskyi">Хмельницький</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr class="men-women">
+                            <td>Стать:</td>
+                            <td colspan="2" class="men-main">
+                                <input type="radio" name="men-main" id="men-main" value="Чоловік">
+                                <label for="men-main">Чоловік</label>
+                                <input type="radio" name="men-main" id="women-main" value="Жінка">
+                                <label for="women-main">Жінка</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="select-file">Фото:</label></td>
+                            <td colspan="2">
+                                <input type="file" name="select-file" id="select-file">
+                                <label class="select-file" for="select-file">Виберіть файл</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="coment">Коментарій:</label></td>
+                            <td colspan="2">
+                                <textarea name="coment" id="coment" placeholder="Введіть текст повідомлення" cols="30"
+                                    rows="5"></textarea>
+                            </td>
+                        </tr>
+                        <tr class="registration-button">
+                            <td></td>
+                            <td><label for="main-button"><input name="main-button" type="submit"
+                                        value="Зареєструватися"></label></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
         </main>
         <footer>
-
+            <div class="table-form-two">
+                <hr>
+                <h2>05. форма таблицею</h2>
+                <h3>Оформлення заявки</h3>
+                <form action="#">
+                    <table>
+                        <tr>
+                            <td>
+                                <input name="name-footer" id="name-footer" type="text">
+                                <label for="name-footer">Прізвище та ім’я</label>
+                            </td>
+                            <td>
+                                <input name="email-footer" id="email-footer" type="email">
+                                <label for="email-footer">Ел. пошта</label>
+                            </td>
+                            <td>
+                                <input name="phone" id="phone" type="tel">
+                                <label for="phone">Телефон</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <select name="country" id="country">
+                                    <option value="your-country" selected disabled>Ваша країна</option>
+                                    <option value="indonesia">Індонезія</option>
+                                    <option value="USA">С.Ш.А.</option>
+                                    <option value="ukraine">Україна</option>
+                                </select>
+                                <label for="country">Країна</label>
+                            </td>
+                            <td class="adress" colspan="2">
+                                <input name="addres" id="addres" type="text">
+                                <label for="addres">Адреса</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input name="city-footer" id="city-footer" type="text">
+                                <label for="city-footer">Місто</label>
+                            </td>
+                            <td>
+                                <input name="house" id="house" type="text">
+                                <label for="house">Будинок</label>
+                            </td>
+                            <td>
+                                <input name="zip-code" id="zip-code" type="text">
+                                <label for="zip-code">Поштовий індекс</label>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="checkbox">
+                        <input name="agree" id="agree" type="checkbox">
+                        <label for="agree">Я погоджуюсь з правилами оплати та доставки товару</label>
+                    </div>
+                    <hr>
+                    <a class="button" href="#">Повернутися назад</a>
+                    <input value="Оформити покупку" type="submit">
+                </form>
+            </div>
         </footer>
     </div>
 </body>
