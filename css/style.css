@@ -631,6 +631,16 @@ header h1 {
     color: #fff;
 }
 
+.down-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
 .checkbox {
     position: relative;
+}
+
+.checkbox label {
+    font: 400 14px "Roboto";
+    color: #1f222c;
 }
