@@ -8,6 +8,16 @@
     padding: 77px 0 144px 0;
 }
 
+.wrapper input[type=radio] {
+    width: 16px;
+    height: 16px;
+}
+
+.wrapper label:hover,
+.wrapper input[type=submit] {
+    cursor: pointer;
+}
+
 header h1 {
     font: 700 30px "Roboto Slab";
     color: #1f222c;
@@ -104,7 +114,7 @@ header h1 {
 }
 
 .inputs-right {
-    position: fixed;
+    /* position: fixed; */
     min-width: 310px;
     top: 25.8%;
     right: 19.3%;
@@ -122,16 +132,29 @@ header h1 {
 
 .inputs-right li:first-child label {
     display: block;
-    text-align: right;
     margin-bottom: 25px;
-    background: 260px 2px url(../img/cross.png) no-repeat;
+    width: 10px;
+    height: 10px;
+    background: url(../img/sprite.png) no-repeat;
+}
+
+.inputs-right li:first-child label:hover {
+    background: 0 -10px url(../img/sprite.png) no-repeat;
 }
 
 .inputs-right li:first-child input {
     margin: 0;
+    width: 10px;
+    height: 10px;
 }
 
-.inputs-right li:first-child input:checked .inputs-right ul {
+.inputs-right li:first-child {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.inputs-right li:first-child input:checked+ul {
     display: none;   
 }
 
@@ -170,6 +193,10 @@ header h1 {
     top: -35%;
     font: 400 13px "Roboto";
     color: #b3b3b3;
+}
+
+.inputs-right li:nth-child(3) label {
+    top: -45%;
 }
 
 .inputs-right ul li:nth-child(5) input {
@@ -268,6 +295,7 @@ header h1 {
 
 .wrapper .top-ul li input {
     margin: 0;
+    margin-right: 4px;
 }
 
 .wrapper .top-ul li label {
