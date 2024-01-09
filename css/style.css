@@ -104,7 +104,7 @@ header h1 {
 }
 
 .inputs-right {
-    /* position: fixed; */
+    position: fixed;
     min-width: 310px;
     top: 25.8%;
     right: 19.3%;
@@ -120,13 +120,22 @@ header h1 {
     border: 1px solid #e6e6e6;
 }
 
-.inputs-right li:first-child a {
+.inputs-right li:first-child label {
     display: block;
     text-align: right;
-    margin-bottom: 24px;
+    margin-bottom: 25px;
+    background: 260px 2px url(../img/cross.png) no-repeat;
 }
 
-.inputs-right input {
+.inputs-right li:first-child input {
+    margin: 0;
+}
+
+.inputs-right li:first-child input:checked .inputs-right ul {
+    display: none;   
+}
+
+.inputs-right li:not(:first-child) input {
     padding: 9px;
     max-width: 260px;
     margin-bottom: 30px;
@@ -582,6 +591,9 @@ header h1 {
     min-width: 220px;
     margin-right: 0px;
     outline: none;
+    border-radius: 3px;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
 }
 
 .table-form-two table select {
