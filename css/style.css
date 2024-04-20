@@ -132,7 +132,7 @@ header h1 {
 }
 
 .inputs-right {
-    /* position: fixed; */
+    position: fixed;
     min-width: 310px;
     top: 25.8%;
     right: 19.3%;
