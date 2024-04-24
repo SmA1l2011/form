@@ -3,7 +3,7 @@
 }
 
 .wrapper {
-    max-width: 990px;
+    width: 65%;
     margin: auto;
     padding: 77px 0 144px 0;
 }
@@ -27,6 +27,7 @@ header h1 {
 }
 
 .inputs {
+    position: relative;
     display: flex;
     justify-content: space-between;
 }
@@ -134,8 +135,8 @@ header h1 {
 .inputs-right {
     position: fixed;
     min-width: 310px;
-    top: 25.8%;
-    right: 19.3%;
+    top: 195px;
+    right: 17.5%;
     z-index: 1;
 }
 
@@ -260,9 +261,28 @@ header h1 {
     list-style: none;
 }
 
+.left-elements ul:last-child li {
+    margin: 6px;
+}
+
+.left-elements li {
+    display: flex;
+    align-items: center;
+}
+
+.left-elements li:last-child input[type=checkbox]+label::before {
+    background-color: #f7f7f7;
+    border: 1px solid #e5e5e5;
+}
+
 .left-elements label {
     font: 400 14px "Roboto";
     color: #1f222c;
+}
+
+.left-elements li:last-child label {
+    font: 400 14px "Roboto";
+    color: #b3b3b3;
 }
 
 .right-elements {
@@ -393,10 +413,6 @@ header h1 {
     left: 14px;
 }
 
-.wrapper main input[type=checkbox]:checked+label::after {
-    top: 7px;
-}
-
 .style-flex {
     display: flex;
     justify-content: space-between;
@@ -407,6 +423,10 @@ header h1 {
     padding: 0;
     margin: 0;
     list-style: none;
+}
+
+input[type=radio] {
+    margin: 7px 3px 7px 5px;
 }
 
 .wrapper .style-checkbox input[type=radio] {
@@ -423,7 +443,7 @@ header h1 {
 .wrapper .men-radio input[type=radio]+label::before {
     content: "";
     position: absolute;
-    background: url(../img/men.png);
+    background: -10px -70px url(../img/sprite.png);
     width: 70px;
     height: 70px;
     top: 0;
@@ -433,7 +453,7 @@ header h1 {
 .wrapper .women-radio input[type=radio]+label::before {
     content: "";
     position: absolute;
-    background: url(../img/women.png);
+    background: -80px -70px url(../img/sprite.png);
     width: 70px;
     height: 70px;
     top: 0;
@@ -443,7 +463,7 @@ header h1 {
 .wrapper .men-radio input[type=radio]:checked+label::before {
     content: "";
     position: absolute;
-    background: url(../img/men-light.png);
+    background: -10px 0px url(../img/sprite.png);
     width: 70px;
     height: 70px;
     top: 0;
@@ -453,7 +473,7 @@ header h1 {
 .wrapper .women-radio input[type=radio]:checked+label::before {
     content: "";
     position: absolute;
-    background: url(../img/women-light.png);
+    background: -80px 0 url(../img/sprite.png);
     width: 70px;
     height: 70px;
     top: 0;
@@ -522,7 +542,6 @@ header h1 {
 }
 
 .wrapper .checkbox-right input[type=checkbox]:checked+label::after {
-    top: 6px;
     left: 22px;
 }
 
@@ -603,7 +622,17 @@ header h1 {
 }
 
 .men-women td input {
-    margin-bottom: 23px;
+    margin: 0px 9px 0px 0;
+}
+
+.men-women td label {
+    margin-right: 23px;
+}
+
+.men-main {
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
 }
 
 .table-form h2 {
@@ -667,7 +696,7 @@ header h1 {
 
 .table-form-two table select {
     appearance: none;
-    background: 184px center url(../img/arrow-two.png) no-repeat;
+    background: 184px center url(../img/arrow.png) no-repeat;
 }
 
 .table-form-two form {
