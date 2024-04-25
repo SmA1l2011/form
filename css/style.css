@@ -409,8 +409,12 @@ header h1 {
 }
 
 .wrapper footer input[type=checkbox]:checked+label::after {
-    top: 8px;
-    left: 14px;
+    top: 7px;
+    left: 14.5px;
+}
+
+.wrapper main input[type=checkbox]:checked+label::after {
+    top: 7px;
 }
 
 .style-flex {
